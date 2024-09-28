@@ -4,6 +4,35 @@ green: #81D742
 dark blue: #092D45
 
 */
+nav {
+    background-color: #FFFFFF; /* Navy Blue from Breakthrough Tech */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+nav a {
+    color: #092D45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #092D45;
