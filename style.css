@@ -4,6 +4,7 @@ green: #81D742
 dark blue: #092D45
 
 */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three columns */
@@ -13,7 +14,8 @@ dark blue: #092D45
       "hero hero hero"
       "faq faq faq"
       "footer footer footer";
-  }
+    background-color: #092D45;
+}
 
 nav {
     background-color: #092D45; /* Navy Blue from Breakthrough Tech */
@@ -58,21 +60,21 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 
-  }
+}
 
-  .hero-content {
+.hero-content {
     text-align: center;
     color: black; /* Change to match background color */
-  }
+}
 
-  .hero-button {
+.hero-button {
     background-color: #C1F325;
     color: #092D45;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
 #chatbot {
     padding: 20px;
@@ -88,9 +90,54 @@ nav a:hover {
     color:#092D45;
     padding: 20px;
 }
+
+#faq {
+    background-color: #F0F0F0;
+    color: #333333;
+    padding: 20px;
+}
+
+#qna {
+    list-style-type: none;
+    padding: 0;
+}
+
+#qna li {
+    text-align: center;
+}
+
+#qna h4 {
+    margin: 0;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #000000;
     font-weight: bold;
     text-align: center;
+}
+
+footer {
+    background-color: #092D45; /* Navy Blue from Breakthrough Tech */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer li {
+    margin: 0 20px; /* Adjust margin as needed */
+}
+
+nav a {
+    color: #C1F325;
+    text-decoration: none;
+    font-weight: bold;
 }
