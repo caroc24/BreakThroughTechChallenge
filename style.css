@@ -39,7 +39,7 @@ nav a:hover {
 }
 
 .hero {
-    background-image: url("hero-image.jpg");
+    background-color: #092D45;
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust height as needed */
