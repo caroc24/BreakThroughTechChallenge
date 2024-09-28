@@ -20,9 +20,14 @@ nav ul {
 }
 
 nav li {
-    margin: 0 10px; /* Adjust margin as needed */
+    margin: 0 20px; /* Adjust margin as needed */
 }
 
+nav ul li:last-child a {
+    padding: 15px 35px;
+    background-color: #092D45;
+    color: #C1F325;
+  }
 nav a {
     color: #092D45;
     text-decoration: none;
@@ -32,6 +37,31 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+.hero {
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .hero-content {
+    text-align: center;
+    color: white; /* Change to match background color */
+  }
+
+  .hero-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
 body {
     font-family: 'Ubuntu', sans-serif;
