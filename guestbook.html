@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .guestbook-form {
+            margin-bottom: 20px;
+        }
+        .guestbook-entries {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+        .entry {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: flex-start;
+            font-weight: bold;
+        }
+        .entry-header div {
+            margin-right: 10px;
+        }
+        .entry-header div::after {
+            content: "|";
+            margin-left: 10px;
+        }
+        .entry-header div:last-child::after {
+            content: "";
+        }
+        .entry-comment {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guestbook</h1>
+
+    <div class="guestbook-form">
+        <h2>Share Your Story</h2>
+        <p> We encourage students to share their stories detailing their journey towards their current aspiring career path!
+        <form id="guestbook-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="classstanding">Class Standing:</label><br>
+            <input type="text" id="classstanding" name="classstanding" required><br><br>
+
+            <label for="aspirations">Career Aspiration:</label><br>
+            <input type="text" id="aspirations" name="aspirations" required><br><br>
+
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="guestbook-entries">
+        <h2>Guestbook Entries</h2>
+        <div id="entries"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('guestbook-form');
+        const entriesDiv = document.getElementById('entries');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form submission to server
+
+            const name = document.getElementById('name').value;
+            const classstanding = document.getElementById('classstanding').value;
+            const aspirations = document.getElementById('aspirations').value;
+            const comment = document.getElementById('comment').value;
+
+            if (name && comment) {
+                // Create a new entry div
+                const entryDiv = document.createElement('div');
+                entryDiv.classList.add('entry');
+
+                // Create a container for name, class standing, and aspirations
+                const entryHeader = document.createElement('div');
+                entryHeader.classList.add('entry-header');
+
+                const entryName = document.createElement('div');
+                entryName.textContent = name;
+
+                const entryStanding = document.createElement('div');
+                entryStanding.textContent = classstanding;
+
+                const entryAspiration = document.createElement('div');
+                entryAspiration.textContent = aspirations;
+
+                // Append name, age, and aspirations to the entry header
+                entryHeader.appendChild(entryName);
+                entryHeader.appendChild(entryStanding);
+                entryHeader.appendChild(entryAspiration);
+
+                // Create a div for the comment
+                const entryComment = document.createElement('div');
+                entryComment.classList.add('entry-comment');
+                entryComment.textContent = comment;
+
+                // Append the entry header and comment to the entry div
+                entryDiv.appendChild(entryHeader);
+                entryDiv.appendChild(entryComment);
+
+                // Add the new entry to the entries section
+                entriesDiv.appendChild(entryDiv);
+
+                // Clear form fields after submission
+                form.reset();
+            }
+        });
+    </script>
+
+</body>
+</html>
