@@ -84,6 +84,10 @@ nav a:hover {
     padding: 20px; /* Optional: Add padding for spacing */
 }
 
+.answer {
+    color:#092D45;
+    padding: 20px;
+}
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #000000;
