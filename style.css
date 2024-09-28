@@ -5,9 +5,16 @@ dark blue: #092D45
 
 */
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    grid-template-rows: 100px 1fr 100px; /* Three rows */
+    grid-template-areas:
+      "nav nav nav"
+      "hero hero hero"
+      "faq faq faq"
+      "footer footer footer";
   }
+
 nav {
     background-color: #092D45; /* Navy Blue from Breakthrough Tech */
     display: flex;
@@ -66,6 +73,10 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
   }
+
+#chatbot {
+    padding: 20px;
+}
 
 #faq {
     background-color: #092D45; /* Replace with your desired background color */
