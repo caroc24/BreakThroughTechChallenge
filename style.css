@@ -5,9 +5,8 @@ dark blue: #092D45
 
 */
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust column widths as needed */
-    grid-template-rows: auto 1fr; /* Adjust row heights as needed */
+    display: flex;
+    flex-direction: column;
   }
 nav {
     background-color: #092D45; /* Navy Blue from Breakthrough Tech */
@@ -67,6 +66,12 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
   }
+
+#faq {
+    background-color: #092D45; /* Replace with your desired background color */
+    color: #C1F325; /* Replace with your desired text color */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
