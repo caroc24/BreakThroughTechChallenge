@@ -4,6 +4,11 @@ green: #81D742
 dark blue: #092D45
 
 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust column widths as needed */
+    grid-template-rows: auto 1fr; /* Adjust row heights as needed */
+  }
 nav {
     background-color: #092D45; /* Navy Blue from Breakthrough Tech */
     display: flex;
