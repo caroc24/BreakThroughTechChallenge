@@ -5,7 +5,7 @@ dark blue: #092D45
 
 */
 nav {
-    background-color: #FFFFFF; /* Navy Blue from Breakthrough Tech */
+    background-color: #092D45; /* Navy Blue from Breakthrough Tech */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,11 +25,11 @@ nav li {
 
 nav ul li:last-child a {
     padding: 15px 35px;
-    background-color: #092D45;
-    color: #C1F325;
+    background-color: #FFFFFF;
+    color: #092D45;
   }
 nav a {
-    color: #092D45;
+    color: #C1F325;
     text-decoration: none;
     font-weight: bold;
 }
@@ -39,7 +39,7 @@ nav a:hover {
 }
 
 .hero {
-    background-color: #092D45;
+    background-color: #FFFFFF;
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust height as needed */
@@ -51,12 +51,12 @@ nav a:hover {
 
   .hero-content {
     text-align: center;
-    color: white; /* Change to match background color */
+    color: black; /* Change to match background color */
   }
 
   .hero-button {
-    background-color: #007bff;
-    color: white;
+    background-color: #C1F325;
+    color: #092D45;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -65,6 +65,7 @@ nav a:hover {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    color: #092D45;
+    color: #000000;
     font-weight: bold;
+    text-align: center;
 }
