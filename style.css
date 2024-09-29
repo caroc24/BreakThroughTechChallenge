@@ -17,6 +17,24 @@ dark blue: #092D45
     background-color: #092D45;
 }
 
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .container {
+      grid-template-columns: 1fr; /* Single column */
+    }
+
+    nav ul {
+      flex-direction: column; /* Vertical menu on smaller screens */
+    }
+
+    nav li {
+      margin: 10px 0; /* Adjust margin for vertical menu */
+    }
+
+    .hero {
+      height: auto; /* Adjust height for smaller screens */
+    }
+}
+
 nav {
     background-color: #092D45; /* Navy Blue from Breakthrough Tech */
     display: flex;
